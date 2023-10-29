@@ -1,0 +1,142 @@
+.login-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #D8FFF8;
+  border-top-right-radius: 50% 30%;
+  border-bottom-right-radius: 50% 30%;
+  z-index: -1;
+}
+
+.login-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.login-page::after {
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.login-container {
+  width: 400px; 
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+h2 {
+  color: #00917C;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #00917C;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #00917C;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #00917C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00725B;
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-page::before {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    width: 95%;
+  }
+
+  .login-page::before {
+    display: none;
+  }
+}
